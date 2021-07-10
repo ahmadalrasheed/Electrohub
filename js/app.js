@@ -1,2 +1,3 @@
 'use strict';
-alert('Electronics website');
+// alert('Electronics website');
+
