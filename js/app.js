@@ -1,13 +1,14 @@
 'use strict';
-// alert('Electronics website');
 
+// alert('Electronics website');
+let slide = document.getElementById('slide');
 productScroll();
 
 function productScroll() {
   let slider = document.getElementById('slider');
   let next = document.getElementsByClassName('pro-next');
   let prev = document.getElementsByClassName('pro-prev');
-  let slide = document.getElementById('slide');
+
   let item = document.getElementById('slide');
 
   for (let i = 0; i < next.length; i++) {
@@ -43,6 +44,7 @@ function productScroll() {
 
 function translateX(position) {
   //translate items
+  // eslint-disable-next-line no-undef
   slide.style.left = position * -295 + 'px';
 }
 
@@ -58,4 +60,37 @@ function getCount(parent, getChildrensChildren) {
     }
   }
   return relevantChildren;
+
+
 }
+let slideIndex = 1;
+showSlides(slideIndex);
+
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+
+prev.addEventListener('click',minusSlides);
+next.addEventListener('click',plusSlides);
+
+function plusSlides() {
+  showSlides(++slideIndex);
+}
+
+function minusSlides() {
+  showSlides(--slideIndex);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName('slides');
+  console.log(slideIndex);
+  if (n > slides.length) {slideIndex = 1;}
+  if (n < 1) {slideIndex = slides.length;}
+  console.log(slideIndex);
+  for ( let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  slides[slideIndex-1].style.display = 'block';
+
+}
+
