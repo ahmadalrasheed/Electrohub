@@ -1,4 +1,16 @@
 
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    width: 100px;
+}
+
+table, tbody {
+    border: 1px solid black;
+}
+
 html,body {
     position: relative;
     height: 100%;
@@ -274,5 +286,6 @@ footer{
   background-color: black;
   color: white;
 }
+
 
 

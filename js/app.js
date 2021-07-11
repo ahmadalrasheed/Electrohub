@@ -1,6 +1,5 @@
 'use strict';
 
-// alert('Electronics website');
 let slide = document.getElementById('slide');
 productScroll();
 
