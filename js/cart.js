@@ -34,9 +34,17 @@ function showCart() {
     let tdEl2=document.createElement('td');
     let tdEl3=document.createElement('td');
     let tdEl4=document.createElement('td');
-    tdEl1.textContent='x';
+    let tdEl5 =document.createElement('td');
+    let imgEl =document.createElement('img');
+    imgEl.setAttribute('src',cart.items[i].product.image);
+    tdEl1.appendChild(imgEl);
+    imgEl.style.width='50px';
+    imgEl.style.height='50px';
+
+    tdEl5.textContent='❌';
     // eslint-disable-next-line no-undef
     tdEl2.textContent=cart.items[i].product.name;
+    tdEl2.style.textAlign='center';
     // eslint-disable-next-line no-undef
     tdEl3.textContent=cart.items[i].quantity;
     // eslint-disable-next-line no-undef
@@ -45,6 +53,7 @@ function showCart() {
     trEl.appendChild(tdEl2);
     trEl.appendChild(tdEl3);
     trEl.appendChild(tdEl4);
+    trEl.appendChild(tdEl5);
     // eslint-disable-next-line no-undef
     tbody.appendChild(trEl);
 

@@ -50,7 +50,7 @@ let allProducts = [{ name: 'MSI', description: 'ahmad laptop', price: 300, image
   { name: 'Marshall', description: 'Marshall Headphone', price: 150, image: 'images/headphone20.jpg', type: 'headphone' },
 
   { name: 'Hp', description: 'whatever', price: 450, image: 'images/tv1.jpg', type: 'tv' },
-  { name: 'Hp', description: 'whatever', price: 500, image: 'images/tv2.jpg', type: 'tv' },
+  { name: 'Hp', description: 'whatever', price: 500, image: 'images/tv1.jpg', type: 'tv' },
   { name: 'Hp', description: 'whatever', price: 380, image: 'images/tv3.jpg', type: 'tv' },
   { name: 'Hp', description: 'whatever', price: 670, image: 'images/tv4.jpg', type: 'tv' },
   { name: 'Hp', description: 'whatever', price: 420, image: 'images/tv5.jpg', type: 'tv' },
@@ -70,7 +70,7 @@ let allProducts = [{ name: 'MSI', description: 'ahmad laptop', price: 300, image
   { name: 'Hp', description: 'whatever', price: 470, image: 'images/tv19.jpg', type: 'tv' },
   { name: 'Hp', description: 'whatever', price: 655, image: 'images/tv20.jpg', type: 'tv' },
 
-  { name: 'samsung', description: '200GB memory', price: 400, image: 'image/phone1.jpg', type: 'phone' }, { name: 'htc', description: '200GB memory', price: 300, image: 'image/phone2.jpg', type: 'phone' }, { name: 'Huawei', description: '200GB memory', price: 200, image: 'image/phone3.jpg', type: 'phone' }, { name: 'iphone', description: '200GB memory', price: 500, image: 'image/phone4.jpg', type: 'phone' }, { name: 'galaxyA71', description: '200GB memory', price: 600, image: 'image/phone5.jpg', type: 'phone' }, { name: 'samsungnote7', description: '200GB memory', price: 700, image: 'image/phone6.jpg', type: 'phone' }, { name: 'Nokia', description: '200GB memory', price: 150, image: 'image/phone7.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 500, image: 'image/phone8.jpg', type: 'phone' }, { name: 'iphone8', description: '200GB memory', price: 900, image: 'image/phone9.jpg', type: 'phone' }, { name: 'sony', description: '200GB memory', price: 550, image: 'image/phone10.jpg', type: 'phone' }, { name: 'galaxys9', description: '200GB memory', price: 700, image: 'image/phone11.jpg', type: 'phone' }, { name: 'iphone7', description: '200GB memory', price: 500, image: 'image/phone12.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 800, image: 'image/phone13.jpg', type: 'phone' }, { name: 'iphone6', description: '200GB memory', price: 650, image: 'image/phone14.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 250, image: 'image/phone15.jpg', type: 'phone' }, { name: 'iphone11', description: '200GB memory', price: 1000, image: 'image/phone16.jpg', type: 'phone' }, { name: 'htc', description: '200GB memory', price: 870, image: 'image/phone17.jpg', type: 'phone' }, { name: 'Nokia', description: '200GB memory', price: 3700, image: 'image/phone18.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 450, image: 'image/phone19.jpg', type: 'phone' }];
+  { name: 'samsung', description: '200GB memory', price: 400, image: 'images/phone1.jpg', type: 'phone' }, { name: 'htc', description: '200GB memory', price: 300, image: 'images/phone2.jpg', type: 'phone' }, { name: 'Huawei', description: '200GB memory', price: 200, image: 'images/phone3.jpg', type: 'phone' }, { name: 'iphone', description: '200GB memory', price: 500, image: 'images/phone4.jpg', type: 'phone' }, { name: 'iphone', description: '200GB memory', price: 500, image: 'images/phone4.jpg', type: 'phone' },{ name: 'samsungnote7', description: '200GB memory', price: 700, image: 'images/phone6.jpg', type: 'phone' }, { name: 'Nokia', description: '200GB memory', price: 150, image: 'images/phone7.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 500, image: 'images/phone8.jpg', type: 'phone' }, { name: 'iphone8', description: '200GB memory', price: 900, image: 'images/phone9.jpg', type: 'phone' }, { name: 'sony', description: '200GB memory', price: 550, image: 'images/phone10.jpg', type: 'phone' }, { name: 'galaxys9', description: '200GB memory', price: 700, image: 'images/phone11.jpg', type: 'phone' }, { name: 'iphone7', description: '200GB memory', price: 500, image: 'images/phone12.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 800, image: 'images/phone13.jpg', type: 'phone' }, { name: 'iphone6', description: '200GB memory', price: 650, image: 'images/phone14.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 250, image: 'images/phone15.jpg', type: 'phone' }, { name: 'iphone11', description: '200GB memory', price: 1000, image: 'images/phone16.jpg', type: 'phone' }, { name: 'htc', description: '200GB memory', price: 870, image: 'images/phone17.jpg', type: 'phone' }, { name: 'Nokia', description: '200GB memory', price: 3700, image: 'images/phone18.jpg', type: 'phone' }, { name: 'samsung', description: '200GB memory', price: 450, image: 'images/phone19.jpg', type: 'phone' },{ name: 'samsung', description: '200GB memory', price: 450, image: 'images/phone19.jpg', type: 'phone' }];
 
 function Product(name, description, price, image, type) {
   this.name = name;
@@ -140,9 +140,37 @@ console.log(randomPhoneProducts);
 
 
 
-function renderRow(){
-  let slide=document.getElementById('slide');
-  for(let i=0;i<randomLaptopProducts.length;i++){
+function renderRow(arr){
+  // let slide=document.getElementById('slide');
+  let divEl = document.createElement('div');
+  let h2El = document.createElement('h2');
+  h2El.textContent=arr[0].type.toUpperCase();
+  h2El.style.margin='20px auto' ;
+  h2El.style.textAlign='center';
+  h2El.style.padding='20px';
+  h2El.style.color='white';
+  h2El.style.background='#FF0000EE';
+  h2El.style.width='200px';
+  divEl.appendChild(h2El);
+  
+
+  let slidesContainer = document.getElementById('slidesContainer');
+  
+  slidesContainer.appendChild(divEl);
+  let slide=document.createElement('div');
+  let slider = document.createElement('div');
+  slider.style.margin='20px 20px';
+  slider.style.background='#33353D';
+  slider.setAttribute('id', 'slider' + arr[0].type);
+  slide.setAttribute('id', 'slide' + arr[0].type);
+  
+  slide.classList.add('slide');
+  slider.classList.add('slider');
+  slider.appendChild(slide);
+  console.log(slider.getAttribute('id'));
+
+
+  for(let i=0;i<arr.length;i++){
     let mainboxEl=document.createElement('div');
     let pEl=document.createElement('p');
     let divimageEl=document.createElement('div');
@@ -156,17 +184,18 @@ function renderRow(){
     mainboxEl.appendChild(pEl);
     mainboxEl.appendChild(divimageEl);
     mainboxEl.appendChild(pEl2);
-   
+
     divimageEl.appendChild(imagecartEl);
     mainboxEl.appendChild(priceEl);
     cartdiv.appendChild(addtocartEl);
     mainboxEl.appendChild(cartdiv);
     addtocartEl.textContent='add to cart';
-    pEl.textContent=randomLaptopProducts[i].name;
-    pEl2.textContent=randomLaptopProducts[i].description;
-    imagecartEl.setAttribute('src',randomLaptopProducts[i].image);
-    priceEl.textContent=`price ${randomLaptopProducts[i].price}`;
-    
+    pEl.textContent=arr[i].name;
+    console.log(arr[i].price);
+    pEl2.textContent=arr[i].description;
+    imagecartEl.setAttribute('src',arr[i].image);
+    priceEl.textContent=`price ${arr[i].price}`;
+
     mainboxEl.classList.add('mainbox');
     pEl.classList.add('new');
     divimageEl.classList.add('image1-box');
@@ -175,15 +204,41 @@ function renderRow(){
     cartdiv.classList.add('cart');
     addtocartEl.setAttribute('id','id-'+i);
     slide.appendChild(mainboxEl);
-
-
-
-
-
-
   }
+  let buttonPrev= document.createElement('button');
+  buttonPrev.textContent='Prev';
+  let buttonNext =document.createElement('button');
+  buttonNext.textContent='Next';
+  buttonPrev.classList.add('ctrl-btn');
+  
+  buttonPrev.classList.add('pro-prev'+arr[0].type);
+  buttonPrev.classList.add('pro-prev');
+  buttonNext.classList.add('ctrl-btn');
+  buttonNext.classList.add('pro-next'+arr[0].type);
+  buttonNext.classList.add('pro-next');
+  slider.appendChild(buttonNext);
+  slider.appendChild(buttonPrev);
+  slidesContainer.appendChild(slider);
+  
 }
-renderRow();
+
+renderRow(randomLaptopProducts);
+let sliderLaptop = document.getElementById('sliderlaptop');
+let slideLaptop = document.getElementById('slidelaptop');
+productScroll(sliderLaptop,slideLaptop,'laptop');
+renderRow(randomHeadPhoneProducts);
+let sliderHeadphone = document.getElementById('sliderheadphone');
+let slideHeadphone = document.getElementById('slideheadphone');
+productScroll(sliderHeadphone,slideHeadphone,'headphone');
+renderRow(randomPhoneProducts);
+let sliderPhone= document.getElementById('sliderphone');
+let slidePhone = document.getElementById('slidephone');
+productScroll(sliderPhone,slidePhone,'phone');
+renderRow(randomTvProducts);
+let sliderTv = document.getElementById('slidertv');
+let slideTv = document.getElementById('slidetv');
+productScroll(sliderTv,slideTv,'tv');
+
 
 for (let i = 0; i < randomHeadPhoneProducts.length; i++) {
   let addToCart=document.getElementById('id-'+i);
@@ -203,20 +258,39 @@ function fillTheCart(event){
   cart.addItem(randomLaptopProducts[index],1);
   console.log(cart);
   // eslint-disable-next-line no-undef
+
+  setCartText(cart);
+
+  // console.log(cart.items);
   cart.saveToLocalStorage();
-
 }
+function setCartText(cart) {
+  let total = document.getElementById('carttotal');
+  total.textContent =' ';
+  let spanEl = document.createElement('span');
+  spanEl.textContent='Cart ';
+  let iEl = document.createElement('i');
+  iEl.classList.add('fas');
+  iEl.classList.add('fa-shopping-cart');
+  total.appendChild(spanEl);
+  total.appendChild(iEl);
+  let spanEl1 = document.createElement('span');
+  spanEl1.textContent= ' '+ cart.items.length;
+  total.appendChild(spanEl1);
+}
+setCartText(cart);
 
-let slide = document.getElementById('slide');
-productScroll();
 
 
-function productScroll() {
-  let slider = document.getElementById('slider');
-  let next = document.getElementsByClassName('pro-next');
-  let prev = document.getElementsByClassName('pro-prev');
 
-  let item = document.getElementById('slide');
+
+
+function productScroll(slider,slide,type) {
+  // let slider = document.getElementById('slider');
+  let next = document.getElementsByClassName('pro-next'+type);
+  let prev = document.getElementsByClassName('pro-prev'+type);
+ let item = slide;
+  
 
   for (let i = 0; i < next.length; i++) {
     //refer elements by class name
@@ -228,7 +302,7 @@ function productScroll() {
       if (position > 0) {
         //avoid slide left beyond the first item
         position -= 1;
-        translateX(position); //translate items
+        translateX(position, slide); //translate items
       }
     });
 
@@ -236,7 +310,7 @@ function productScroll() {
       if (position >= 0 && position < hiddenItems()) {
         //avoid slide right beyond the last item
         position += 1;
-        translateX(position); //translate items
+        translateX(position, slide); //translate items
       }
     });
   }
@@ -249,7 +323,7 @@ function productScroll() {
   }
 }
 
-function translateX(position) {
+function translateX(position, slide) {
   //translate items
   // eslint-disable-next-line no-undef
   slide.style.left = position * -295 + 'px';
@@ -300,4 +374,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'block';
 
 }
+
+
 
