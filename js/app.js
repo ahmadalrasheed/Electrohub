@@ -152,10 +152,10 @@ function renderRow(arr){
   h2El.style.background='#FF0000EE';
   h2El.style.width='200px';
   divEl.appendChild(h2El);
-  
+
 
   let slidesContainer = document.getElementById('slidesContainer');
-  
+
   slidesContainer.appendChild(divEl);
   let slide=document.createElement('div');
   let slider = document.createElement('div');
@@ -163,7 +163,7 @@ function renderRow(arr){
   slider.style.background='#33353D';
   slider.setAttribute('id', 'slider' + arr[0].type);
   slide.setAttribute('id', 'slide' + arr[0].type);
-  
+
   slide.classList.add('slide');
   slider.classList.add('slider');
   slider.appendChild(slide);
@@ -194,7 +194,7 @@ function renderRow(arr){
     console.log(arr[i].price);
     pEl2.textContent=arr[i].description;
     imagecartEl.setAttribute('src',arr[i].image);
-    priceEl.textContent=`price ${arr[i].price}`;
+    priceEl.textContent=`price: ${arr[i].price}$ `;
 
     mainboxEl.classList.add('mainbox');
     pEl.classList.add('new');
@@ -210,7 +210,7 @@ function renderRow(arr){
   let buttonNext =document.createElement('button');
   buttonNext.textContent='Next';
   buttonPrev.classList.add('ctrl-btn');
-  
+
   buttonPrev.classList.add('pro-prev'+arr[0].type);
   buttonPrev.classList.add('pro-prev');
   buttonNext.classList.add('ctrl-btn');
@@ -219,7 +219,7 @@ function renderRow(arr){
   slider.appendChild(buttonNext);
   slider.appendChild(buttonPrev);
   slidesContainer.appendChild(slider);
-  
+
 }
 
 renderRow(randomLaptopProducts);
@@ -289,8 +289,8 @@ function productScroll(slider,slide,type) {
   // let slider = document.getElementById('slider');
   let next = document.getElementsByClassName('pro-next'+type);
   let prev = document.getElementsByClassName('pro-prev'+type);
- let item = slide;
-  
+  let item = slide;
+
 
   for (let i = 0; i < next.length; i++) {
     //refer elements by class name
