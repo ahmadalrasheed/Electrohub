@@ -20,13 +20,15 @@ function minusSlides() {
 
 function showSlides(n) {
   let slides = document.getElementsByClassName('slides');
-  console.log(slideIndex);
+  // console.log(slideIndex);
   if (n > slides.length) {slideIndex = 1;}
   if (n < 1) {slideIndex = slides.length;}
-  console.log(slideIndex);
+  // console.log(slideIndex);
   for ( let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
   }
 
   slides[slideIndex-1].style.display = 'block';
+  console.log(slides);
 }
+
