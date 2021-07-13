@@ -42,6 +42,7 @@ function showCart() {
     imgEl.style.height='50px';
 
     tdEl5.textContent='❌';
+    tdEl5.style.cursor='pointer';
     // eslint-disable-next-line no-undef
     tdEl2.textContent=cart.items[i].product.name;
     tdEl2.style.textAlign='center';
@@ -61,6 +62,22 @@ function showCart() {
   }
 }
 
+function setCartText(cart) {
+  let total = document.getElementById('carttotal');
+  total.textContent = ' ';
+  let spanEl = document.createElement('span');
+  spanEl.textContent = 'Cart ';
+  let iEl = document.createElement('i');
+  console.log(cart);
+  iEl.classList.add('fas');
+  iEl.classList.add('fa-shopping-cart');
+  total.appendChild(spanEl);
+  total.appendChild(iEl);
+  let spanEl1 = document.createElement('span');
+  spanEl1.textContent = ' ' + cart.items.length;
+  total.appendChild(spanEl1);
+}
 
 // This will initialize the page and draw the cart on screen
 renderCart();
+setCartText(cart);
