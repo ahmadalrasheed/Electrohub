@@ -2,11 +2,12 @@
     border: 1px solid black;
 } 
 
+
+.divatble{
+  padding: 30px;
+}
 #table {width: 100%;
-margin-top: 20px;
-margin-bottom: 20px;
-margin-right: 20px;
-margin-left: 20px;
+
 } 
 th, td {
     padding: 10px;
@@ -184,7 +185,7 @@ body{
 .main-slider {
   position: relative;
   margin: auto;
-  
+  margin-top: 10px;
   /* height: 95vh; */
   
 
@@ -241,6 +242,7 @@ body {
 
 main {
     min-height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -473,7 +475,7 @@ header{
   height:40px;
   line-height:40px;
   margin-left:6px;
-  margin-right:0;
+  margin-right:40px;
   border-radius:100%;
   background-color:#33353d
 }
@@ -769,6 +771,7 @@ header{
 
 
 
+
  
  /* End of ahmad and trads work on all products page */
  /* saddam */
@@ -779,6 +782,9 @@ header{
  
  
  @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&family=Playfair+Display:ital,wght@1,600;1,800&display=swap');
+
+ 
+
 
  @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
@@ -842,6 +848,36 @@ header{
      display: inline-block;
  font-family: 'Otomanopee One', sans-serif;
 
+#footerlogoo{
+  height:100px;
+  width:150px;
+  margin-top: 45px;
+  float: left;
+  
+}
+
+
+
+.col-xs-6{
+  
+  line-height: 2em;
+  position: relative;
+  right: -77px ;
+}
+
+.footerquicklinks{
+  float: right;
+  position: relative;
+  top: -235px;
+  right: 17px;
+  line-height: 2em;
+  
+}
+
+
+.text-justify{
+  line-height: 2em;
+}
 
  }
  
