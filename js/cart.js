@@ -51,6 +51,7 @@ function showCart() {
     tdEl3.textContent=cart.items[i].quantity;
     
     
+    
     // let input = document.createElement('input');
     // input.setAttribute('type','number');
     // input.setAttribute('type','number');
