@@ -1,3 +1,108 @@
+#logo{
+  height:150px;
+  width:150px;
+  position: relative;
+  top:55px;
+  right: 49%;
+}
+header{
+ position: relative;
+
+
+}
+#fixeddiv{
+  background:#33353d;
+  width:100%;
+  height:12vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 12vh;
+}
+
+    h1{
+        text-align:center;
+        position: relative;
+        bottom: 40px;
+        font-family: 'Libre Baskerville', serif;
+        background:url('https://media4.giphy.com/media/xT9IgwWOpd4sJVuDe0/giphy.gif?cid=ecf05e4714epesj37nc0r4tlpi6ju7a1gznpl4lvaoqtvmuq&rid=giphy.gif&ct=g') center center no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size:5rem;
+        letter-spacing:10px;
+        background-size:cover;
+        margin:0px;
+        color:transparent;
+        right:390px;
+
+        
+        /* left: 70px; */
+        
+    }
+
+    nav {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left:160px;
+        bottom: 90px;
+    }
+
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            color: #DDDDDD;
+            font-size: 18px;
+            left: 365px;
+            
+        }
+
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right:0;
+            height: 2px;
+            transform: scaleX(0);
+            background: white;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after{
+            transform: scaleX(1)
+        }
+
+        /* End of the header */
+
+header img{
+  margin-left: 150px;float: left;height: 150px;width:400px; 
+}
+
+
+
+
+/* main{
+  clear: both;
+} */
+
+
+
+/* here is the header style */
+
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Righteous&display=swap%27'); */ 
+ 
  table, th, td {
     border: 1px solid black;
 } 
@@ -125,10 +230,10 @@ body{
 /* sliders css */
 
 .slider {
-    width: 100%;
+    width: 90%;
     height: 400px;
     position: relative;
-    margin: auto;
+    left:50px;
     overflow-x: scroll;
     overflow-y: hidden;
   }
@@ -185,7 +290,8 @@ body{
 .main-slider {
   position: relative;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 150px;
+  
   /* height: 95vh; */
   
 
@@ -210,19 +316,7 @@ body{
 
 
 
-  header img{
-    margin-left: 150px;float: left;height: 150px;width:400px; 
-  }
-  /* main{
-    clear: both;
-  } */
-
-
-
-/* here is the header style */
-
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Righteous&display=swap%27'); */
+  
 
 * {
     margin: 0;
@@ -254,85 +348,7 @@ main {
     
 } */
 
-#logo{
-  height:150px;
-  width:150px;
-  position: relative;
-  top:60px;
-  right: 44%;
-}
-header{
- 
-    background:#33353d;
-    width:100%;
-    height:16vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
 
-}
-
-    h1{
-        text-align:center;
-        position: relative;
-        bottom: 40px;
-        font-family: 'Libre Baskerville', serif;
-        background:url('https://media4.giphy.com/media/xT9IgwWOpd4sJVuDe0/giphy.gif?cid=ecf05e4714epesj37nc0r4tlpi6ju7a1gznpl4lvaoqtvmuq&rid=giphy.gif&ct=g') center center no-repeat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size:5rem;
-        letter-spacing:10px;
-        background-size:cover;
-        margin:0px;
-        color:transparent;
-        right:330px;
-
-        
-        /* left: 70px; */
-        
-    }
-
-    nav {
-        max-width: 800px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        left:100px;
-        bottom: 90px;
-    }
-
-        nav a {
-            flex-grow: 1;
-            text-align: center;
-            padding-left: 30px;
-            padding-right: 30px;
-            position: relative;
-            color: #DDDDDD;
-            font-size: 18px;
-            left: 365px;
-            
-        }
-
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right:0;
-            height: 2px;
-            transform: scaleX(0);
-            background: white;
-            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
-        }
-
-        nav a:hover::after{
-            transform: scaleX(1)
-        }
-
-        /* End of the header */
 
 
 
