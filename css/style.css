@@ -111,7 +111,9 @@ header img{
 .divatble{
   padding: 30px;
 }
-#table {width: 100%;
+#table {
+  width: 100%;
+  margin-top: 100px;
 
 } 
 th, td {
@@ -703,42 +705,51 @@ main {
   width:80%;
   margin: auto;
   margin-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
  
 
 
 }
 #laptopsdiv{
+  text-align: center;
+  border-radius: 30px;
  width: 50%;
  background-image: url(../images/laptops.jpg);
  
 
 }
 #Headphonesdiv{
+  text-align: center;
+  border-radius: 30px;
   width: 50%;
   background-image: url(../images/headphones.jpg);
-  margin-left: 20px;
+  margin-left: 40px;
  }
 
 
  #Phonesdiv{
+  text-align: center;
+  border-radius: 30px;
   width: 50%;
   background-image: url(../images/phones.jpg);
   
  }
 
  #TVsdiv{
+  text-align: center;
+  border-radius: 30px;
   width: 50%;
   background-image: url(../images/tvs.jpg);
-  margin-left: 20px;
+  margin-left: 40px;
  }
 
  .allproducts{
-  position: relative;
+  
+  display: inline-block;
   color: white;
-  top: 270px;
-  left: 260px;
-  font-size: 25px;
+  font-size: 32px;
+  margin-top: 25%;
+  font-weight: bolder;
  }
  #allproductsh2{
   font-family: 'Libre Baskerville', serif;
@@ -754,6 +765,7 @@ main {
    left:120px;
    flex-wrap: wrap;
    padding-bottom: 90px;
+   margin-top: 100px;
    
  }
  #phonesdisplay{
@@ -763,6 +775,7 @@ main {
   left:120px;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  margin-top: 100px;
    
  }
  #tvsdisplay{
@@ -772,6 +785,7 @@ main {
   left:120px;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  margin-top: 100px;
 
    
  }
@@ -782,6 +796,7 @@ main {
   left:120px;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  margin-top: 100px;
     
  }
 
@@ -943,20 +958,9 @@ main {
  top: 25px;
  }
  
- #tr2{
- 
- position: relative;
- top: 25px;
- 
- 
- }
 
- h2{
- font-size: 30px;
- font-family: 'Otomanopee One', sans-serif;
- 
- 
- }
+
+
  
  
  line{
@@ -969,7 +973,7 @@ main {
  .img1,.img2,.img3{
  
  position: relative;
- top: -29px
+ bottom: 29px
  }
  .img4,.img5,.img6{
  
@@ -977,18 +981,21 @@ main {
      bottom: 44px
  }
  
- .img4{
+ /* .img4{
      position: relative;
      
       top: -20px;
      right: 24px;
+     bottom: 44px
  
- }
+ }   */
  
  .paraabout{
-     font-size: 30px;
+     font-size: 22px;
      display: inline-block;
- font-family: 'Otomanopee One', sans-serif;}
+ font-family: 'Otomanopee One', sans-serif;
+color: white;}
+ 
 
 #footerlogoo{
   height:100px;
@@ -1032,10 +1039,11 @@ main {
  
  
  #he{
- color:whitesmoke;
+ color:black;
      text-align: center;
      font-size: 80px;
      font-family: 'Otomanopee One', sans-serif;
+     font-weight: bolder;
  
  }
  .aboutus-contanier{
@@ -1053,18 +1061,19 @@ main {
  position: relative;
  max-width: 300px;
  height: 215px;
- background-color: white;
+ background-color: #33353d;
  margin: 30px     10px;
  padding: 20px    15px;
  display: flex;
  flex-direction: column;
  box-shadow: 0 5px 202px rgba(0,0,0,0.5 );
  transition: 0.3s ease-in-out;
+ color: white;
  }
  .aboutus-contanier .card:hover  {
  height: 420px;
  }
- .aboutus-contanier .card .imgBx{
+ /* .aboutus-contanier .card .imgBx{
  
      position: relative;
      width: 260px;
@@ -1074,7 +1083,7 @@ main {
      z-index: 0;
      box-shadow: 0 5px 202px rgba(0,0,0,0.2);
  
- }
+ } */
  
  .aboutus-contanier .card  .content {
   position: relative;
@@ -1098,15 +1107,16 @@ main {
      
  } 
  
- .social-icons a.facebook:hover
+
+ .facebook:hover
  {
-   background-color:#3b5998
+   color:#3b5998
    
  }
  
- .social-icons a.linkedin:hover
+ .linkedin:hover
  {
-   background-color:#007bb6
+   color:#007bb6
  }
  
  
@@ -1114,15 +1124,15 @@ main {
  
    .social-icons a{ 
    
-     display:inline-block;
+     /* display:inline-block;
      line-height:0px;
      width:50px;
-     height:50px;
+     height:50px; */
  } 
  
  #fab fa-faceboo{
-     width: 40px;
-     height: 40px;
+     /* width: 40px;
+     height: 40px; */
  }
 
  /* end saddam */
@@ -1130,3 +1140,32 @@ main {
  
  
 
+/* styling all products pages by ahmad */
+.allproductsmain{
+  margin-top: 100px;
+  padding-bottom: 40px;
+}
+
+.specificproducttitle{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.aboutus-flex{
+  background-color: white;
+  margin-top: 100px;
+}
+h2{
+  font-size: 32px;
+  color: white;
+  font-family: 'Otomanopee One', sans-serif;
+  
+  
+  }
+/* 
+  #tradhariridiv img{
+    padding-bottom: 20px;
+  } */
+/*  end of styling products*/
