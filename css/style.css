@@ -770,11 +770,83 @@ header{
  }
 
 
+
+
+ 
+ /* End of ahmad and trads work on all products page */
+ /* saddam */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&family=Playfair+Display:ital,wght@1,600&display=swap');
+ 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&family=Playfair+Display:ital,wght@1,600;1,800&display=swap');
+
  
 
 
-/* End of ahmad and trads work on all products page */
+ @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
+
+ *
+ {
+     margin: 0;
+     padding: 0;
+    
+ }
+ 
+ #tr{
+     position: relative;
+ top: 25px;
+ }
+ 
+ #tr2{
+ 
+ position: relative;
+ top: 25px;
+ 
+ 
+ }
+
+ h2{
+ font-size: 30px;
+ font-family: 'Otomanopee One', sans-serif;
+ 
+ 
+ }
+ 
+ 
+ line{
+ width: 70%;
+ height: 60%;
+  
+ color: gray;
+ 
+ }
+ .img1,.img2,.img3{
+ 
+ position: relative;
+ top: -29px
+ }
+ .img4,.img5,.img6{
+ 
+     position: relative;
+     bottom: 44px
+ }
+ 
+ .img4{
+     position: relative;
+     
+      top: -20px;
+     right: 24px;
+ 
+ }
+ 
+ .paraabout{
+     font-size: 30px;
+     display: inline-block;
+ font-family: 'Otomanopee One', sans-serif;
 
 #footerlogoo{
   height:100px;
@@ -807,4 +879,112 @@ header{
   line-height: 2em;
 }
 
+ }
+ 
+ .aboutus-flex{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color:#33353d;
+ }
+ 
+ 
+ #he{
+ color:whitesmoke;
+     text-align: center;
+     font-size: 80px;
+     font-family: 'Otomanopee One', sans-serif;
+ 
+ }
+ .aboutus-contanier{
+ 
+     position: relative;
+     width: 1100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 40px;
+ }
+ 
+ .aboutus-contanier .card{
+ position: relative;
+ max-width: 300px;
+ height: 215px;
+ background-color: white;
+ margin: 30px     10px;
+ padding: 20px    15px;
+ display: flex;
+ flex-direction: column;
+ box-shadow: 0 5px 202px rgba(0,0,0,0.5 );
+ transition: 0.3s ease-in-out;
+ }
+ .aboutus-contanier .card:hover  {
+ height: 420px;
+ }
+ .aboutus-contanier .card .imgBx{
+ 
+     position: relative;
+     width: 260px;
+     height: 260px;
+     top: -10px;
+     left: 20px;
+     z-index: 0;
+     box-shadow: 0 5px 202px rgba(0,0,0,0.2);
+ 
+ }
+ 
+ .aboutus-contanier .card  .content {
+  position: relative;
+ 
+  margin-top: -140px; 
+ padding: 10px 15px; 
+ text-align: center;
+ color: #111; 
+ visibility: hidden;
+ opacity: 0;
+ transition: 0.3s ease-in-out;
+ } 
+ 
+ .aboutus-contanier .card:hover  .content {
+ 
+     visibility: visible;
+     opacity: 1;
+     transition-delay: 0.3s   ;
+     margin-top: -40px;
+     
+     
+ } 
+ 
+ .social-icons a.facebook:hover
+ {
+   background-color:#3b5998
+   
+ }
+ 
+ .social-icons a.linkedin:hover
+ {
+   background-color:#007bb6
+ }
+ 
+ 
+ 
+ 
+   .social-icons a{ 
+   
+     display:inline-block;
+     line-height:0px;
+     width:50px;
+     height:50px;
+ } 
+ 
+ #fab fa-faceboo{
+     width: 40px;
+     height: 40px;
+ }
+
+ /* end saddam */
+ 
+ 
+ 
 
