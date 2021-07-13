@@ -110,9 +110,15 @@ body{
 }
 .cart:hover{
     transform: scale(1.1);
-    background-color: #fe9048;
+    background-color: white;
     box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
     transition: all ease 0.1s;
+    
+}
+
+.cart:hover a{
+  color: #ff0000ee;
+  
 }
 
 /* sliders css */
@@ -153,12 +159,13 @@ body{
   .ctrl-btn {
     padding: 20px 20px;
     min-width: 50px;
-    background: #fff;
+    background: #33353d;
     border: none;
     font-weight: 600;
     text-align: center;
     cursor: pointer;
     outline: none;
+    color: white;
   
     position: absolute;
     top: 50%;
@@ -167,6 +174,7 @@ body{
   
   .ctrl-btn.pro-prev {
     left: 0;
+
   }
   
   .ctrl-btn.pro-next {
@@ -593,4 +601,105 @@ header{
 /* animationbackground */
 
 /* End of animation backgroun */
+
+
+
+
+
+/* ahmad and trad create all product page */
+.flexproduct{
+  display: flex;
+  height:300px;
+  width:80%;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 40px;
+ 
+
+
+}
+#laptopsdiv{
+ width: 50%;
+ background-image: url(../images/laptops.jpg);
+ 
+
+}
+#Headphonesdiv{
+  width: 50%;
+  background-image: url(../images/headphones.jpg);
+  margin-left: 20px;
+ }
+
+
+ #Phonesdiv{
+  width: 50%;
+  background-image: url(../images/phones.jpg);
+  
+ }
+
+ #TVsdiv{
+  width: 50%;
+  background-image: url(../images/tvs.jpg);
+  margin-left: 20px;
+ }
+
+ .allproducts{
+  position: relative;
+  color: white;
+  top: 270px;
+  left: 260px;
+  font-size: 25px;
+ }
+ #allproductsh2{
+  font-family: 'Libre Baskerville', serif;
+   text-align: center;
+   font-size: 40px;
+   font-weight: bolder;
+ }
+
+ #laptopsdisplay{
+   display: flex;
+   position: relative;
+   top:50px;
+   left:120px;
+   flex-wrap: wrap;
+   padding-bottom: 90px;
+   
+ }
+ #phonesdisplay{
+  display: flex;
+  position: relative;
+  top:50px;
+  left:120px;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+   
+ }
+ #tvsdisplay{
+  display: flex;
+  position: relative;
+  top:50px;
+  left:120px;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+
+   
+ }
+ #headphonesdisplay{
+  display: flex;
+  position: relative;
+  top:50px;
+  left:120px;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+    
+ }
+
+
+
+
+
+/* End of ahmad and trads work on all products page */
+
+
 
