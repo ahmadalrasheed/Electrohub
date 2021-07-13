@@ -52,7 +52,7 @@ top: -29px
     position: relative;
     
      top: -20px;
-    right: 24px;
+    right: 27px;
 
 }
 
@@ -65,12 +65,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:gold
+    background-color:indigo
 }
 
 
 #he{
-color:goldenrod;
+color:whitesmoke;
     text-align: center;
     font-size: 80px;
     font-family: 'Encode Sans SC', sans-serif;
@@ -104,6 +104,8 @@ transition: 0.3s ease-in-out;
 .contanier .card:hover  {
 height: 420px;
 }
+
+
 .contanier .card .imgBx{
 
     position: relative;
@@ -115,6 +117,8 @@ height: 420px;
     box-shadow: 0 5px 202px rgba(0,0,0,0.2);
 
 }
+
+
 
 .contanier .card  .content {
  position: relative;
@@ -128,6 +132,8 @@ opacity: 0;
 transition: 0.3s ease-in-out;
 } 
 
+
+
 .contanier .card:hover  .content {
 
     visibility: visible;
@@ -137,6 +143,8 @@ transition: 0.3s ease-in-out;
     
     
 } 
+
+
 
 .social-icons a.facebook:hover
 {
@@ -149,13 +157,7 @@ transition: 0.3s ease-in-out;
   background-color:#007bb6
 }
 
-/* .social-icons.size-sm a
-{
-  line-height:34px;
-  height: 150px;
-  width: 150px;
-  font-size:14px
-} */
+
 
 
   .social-icons a{ 
@@ -168,7 +170,7 @@ transition: 0.3s ease-in-out;
     height:50px;
 } 
 
-#fab fa-faceboo{
+#fab fa-facebook{
     width: 40px;
     height: 40px;
 }
