@@ -179,7 +179,11 @@ function renderRow(arr) {
   h2El.style.padding = '20px';
   h2El.style.color = 'white';
   h2El.style.background = '#FF0000EE';
-  h2El.style.width = '100%';
+  h2El.style.width = '90%';
+  h2El.style.fontSize='32px';
+  h2El.style.marginBottom='30px';
+  h2El.style.borderTopLeftRadius='50px';
+  h2El.style.borderBottomRightRadius='50px';
   h2El.style.backgroundImage='linear-gradient(#33353d, grey)';
   h2El.style.boxShadow='black 0 10px 10px';
   divEl.appendChild(h2El);
@@ -249,6 +253,7 @@ function renderRow(arr) {
   buttonNext.classList.add('pro-next');
   slider.appendChild(buttonNext);
   slider.appendChild(buttonPrev);
+  slider.style.marginBottom='50px'
   slidesContainer.appendChild(slider);
 
 }
