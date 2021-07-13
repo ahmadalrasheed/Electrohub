@@ -21,10 +21,12 @@ function removeItemFromCart(event) {
   let row = event.target.parentNode;
   console.log(row.rowIndex);
 
- 
-  cart.removeItem(row.rowIndex-1);
-  // console.log(cart);
-  table.deleteRow(row.rowIndex);
-  cart.saveToLocalStorage();
+  if (event.target.innerHTML=='❌'){
+    cart.removeItem(row.rowIndex-1);
+    // console.log(cart);
+    table.deleteRow(row.rowIndex);
+    cart.saveToLocalStorage();
+  }
+
 //   renderCart();
 }
