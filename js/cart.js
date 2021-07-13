@@ -49,9 +49,9 @@ function showCart() {
     tdEl2.style.textAlign='center';
     // eslint-disable-next-line no-undef
     tdEl3.textContent=cart.items[i].quantity;
-    
-    
-    
+
+
+
     // let input = document.createElement('input');
     // input.setAttribute('type','number');
     // input.setAttribute('type','number');
@@ -96,66 +96,77 @@ function cardForm (event) {
   let formContainer=document.getElementById('formcontainer');
   for ( let i=0; i<cart.items.length; i++) {
     total=total+cart.items[i].product.price;}
-    let totalEl = document.createElement('h3');
-    totalEl.textContent='Your total price is '+ total;
-    formContainer.appendChild(totalEl);
+  let totalEl = document.createElement('h3');
+  totalEl.textContent='Your total price is '+ total;
+  formContainer.appendChild(totalEl);
+  event.preventDefault();
+  // let formEl = document.getElementById('form');
+  let fieldEl = document.getElementById('field');
+  let labelEl = document.createElement('label');
+  labelEl.textContent='credit card number';
+  let inputEl = document.createElement('input');
+  inputEl.setAttribute('id','creditnumber');
+  inputEl.setAttribute('name','creditnumber');
+  inputEl.setAttribute('type','number');
+  // inputEl.setAttribute('placeholder','enter cre')
+
+  let labelEl2 = document.createElement('label');
+  labelEl2.textContent= 'name';
+  let inputEl2 = document.createElement('input');
+  inputEl2.setAttribute('id','userName');
+  inputEl2.setAttribute('name','userName');
+  inputEl2.setAttribute('type','text');
+
+  let labelEl3 = document.createElement('label');
+  labelEl3.textContent='Expiration date';
+  let inputEl3 = document.createElement('input');
+  inputEl3.setAttribute('id','date');
+  inputEl3.setAttribute('name','date');
+  inputEl3.setAttribute('type','date');
+  let labelEl4 = document.createElement('label');
+  labelEl4.textContent='CVV';
+  let inputEl4 = document.createElement('input');
+  inputEl4.setAttribute('id','cvv');
+  inputEl4.setAttribute('name','cvv');
+  inputEl4.setAttribute('type','number');
+  // formEl.appendChild(fieldEl);
+  fieldEl.appendChild(labelEl);
+  fieldEl.appendChild(inputEl);
+  fieldEl.appendChild(labelEl2);
+  fieldEl.appendChild(inputEl2);
+  fieldEl.appendChild(labelEl3);
+  fieldEl.appendChild(inputEl3);
+  fieldEl.appendChild(labelEl4);
+  fieldEl.appendChild(inputEl4);
+  let inputEl5 = document.createElement('input');
+  // let divEl = document.getElementsByClassName('customAlert');
+  inputEl5.setAttribute('type','submit');
+  inputEl5.setAttribute('value','submit');
+  fieldEl.appendChild(inputEl5);
+  inputEl5.addEventListener('click', clearLocalStorage);
+ 
+
+
+
+
+  function clearLocalStorage(event){
+  localStorage.removeItem('cart');
+    cart.items.length=0;
     event.preventDefault();
-    // let formEl = document.getElementById('form');
-    let fieldEl = document.getElementById('field');
-    let labelEl = document.createElement('label');
-    labelEl.textContent='credit card number';
-    let inputEl = document.createElement('input');
-    inputEl.setAttribute('id','creditnumber');
-    inputEl.setAttribute('name','creditnumber');
-    inputEl.setAttribute('type','number');
-    // inputEl.setAttribute('placeholder','enter cre')
-
-    let labelEl2 = document.createElement('label');
-    labelEl2.textContent= 'name';
-    let inputEl2 = document.createElement('input');
-    inputEl2.setAttribute('id','userName');
-    inputEl2.setAttribute('name','userName');
-    inputEl2.setAttribute('type','text');
-
-    let labelEl3 = document.createElement('label');
-    labelEl3.textContent='Expiration date';
-    let inputEl3 = document.createElement('input');
-    inputEl3.setAttribute('id','date');
-    inputEl3.setAttribute('name','date');
-    inputEl3.setAttribute('type','date');
-    let labelEl4 = document.createElement('label');
-    labelEl4.textContent='CVV';
-    let inputEl4 = document.createElement('input');
-    inputEl4.setAttribute('id','cvv');
-    inputEl4.setAttribute('name','cvv');
-    inputEl4.setAttribute('type','number');
-    // formEl.appendChild(fieldEl);
-    fieldEl.appendChild(labelEl);
-    fieldEl.appendChild(inputEl);
-    fieldEl.appendChild(labelEl2);
-    fieldEl.appendChild(inputEl2);
-    fieldEl.appendChild(labelEl3);
-    fieldEl.appendChild(inputEl3);
-    fieldEl.appendChild(labelEl4);
-    fieldEl.appendChild(inputEl4);
-    let inputEl5 = document.createElement('input');
-    inputEl5.setAttribute('type','submit');
-    inputEl5.setAttribute('value','check out');
-    fieldEl.appendChild(inputEl5);
-
+    Swal.fire({
+      title: 'Success',
+      text: 'Thank you for purchasing from us',
+      icon: 'success',
+      confirmButtonText: 'ok'
+    });
+    
+  
+  
   }
 
+}
 
 
-// function openForm() {
-//   document.getElementById("myForm").style.display = "block";
-// }
-
-// function closeForm() {
-//   document.getElementById("myForm").style.display = "none";
-// }
-// openForm();
-// closeForm();
 
 
 
