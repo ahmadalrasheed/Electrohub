@@ -775,6 +775,129 @@ header{
 
 /* End of ahmad and trads work on all products page */
 
+/* style of cart.html */
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#table th {
+ text-align: center;
+ vertical-align: middle;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #33353d;
+  color: white;
+}
+
+#total{
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  font-size: large;
+  background-color:#33353d;
+  font-weight: bold;
+  /* margin-left: 70%; */
+  float: right;
+ margin-bottom: 5%;
+ color: white;
+ margin-right:3%;
+ bottom:0px ;
+ 
+}
+#formcontainer{
+ height: 20px;
+ width: 200px;
+ float: left;
+ margin-left: 10px;
+ margin-bottom: 30px;
+}
+#newForm {
+  position: relative;
+  top: -29px;
+  clear: both;
+ float: right;
+ bottom: 30px;
+ margin-left: 54%;
+ height: 60%;
+}
+#firstin {
+ display: flex;
+ flex-direction: column;
+}
+#firstin input {
+ width: 300px;
+ height: 30px;
+ margin-bottom: 10px;
+}
+
+#secondin {
+ display: flex;
+ flex-direction: column;
+}
+
+#secondin input {
+ width: 300px;
+ height: 30px;
+ margin-bottom: 10px;
+}
+
+#thirdin {
+ display: flex;
+ flex-direction: column;
+}
+#thirdin input {
+ width: 300px;
+ height: 30px;
+ margin-bottom: 10px;
+}
+ 
+#fourthin {
+ display: flex;
+ flex-direction: column;
+}
+
+#fourthin input {
+ width: 300px;
+ height: 30px;
+ margin-bottom: 10px;
+}
+#submit {
+ width: 300px;
+ height: 30px;
+ margin-bottom: 10px;
+ background-color: #33353d;
+ text-align: center;
+ color: white;
+ font-size: large;
+ border-radius: 5px;
+}
+#totalprice {
+  font-size: 30px;
+  position: relative;
+  left: 40px;
+}
+#legend {
+  padding-bottom: 5px;
+}
+#hrjava {
+  margin-bottom: 10px;
+  width: 60%;
+}
+
 
 
 
