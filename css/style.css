@@ -2,11 +2,12 @@
     border: 1px solid black;
 } 
 
+
+.divatble{
+  padding: 30px;
+}
 #table {width: 100%;
-margin-top: 20px;
-margin-bottom: 20px;
-margin-right: 20px;
-margin-left: 20px;
+
 } 
 th, td {
     padding: 10px;
@@ -184,7 +185,7 @@ body{
 .main-slider {
   position: relative;
   margin: auto;
-  
+  margin-top: 10px;
   /* height: 95vh; */
   
 
@@ -241,6 +242,7 @@ body {
 
 main {
     min-height: 100vh;
+    overflow: hidden;
 }
 
 
