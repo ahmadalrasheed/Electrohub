@@ -11,7 +11,7 @@ header{
 
 }
 #fixeddiv{
-  background:#33353d;
+  background:#113F67;
   width:100%;
   height:12vh;
   display:flex;
@@ -174,7 +174,7 @@ body{
 }
 .new{
     position: absolute;
-    color: coral;
+    color: #113F67;
     top: 0px;
     right: 20px;
 }
@@ -189,7 +189,7 @@ body{
 }
 .price{
     color: #000000;
-    background-color: #ff55555b;
+    background-color: #87C0CD;
     line-height: 20px;
     font-weight: bolder;
 
@@ -198,7 +198,7 @@ body{
     position: absolute;
     bottom: 0px;
     height: 45px;
-    background-color: #ff0000ee;
+    background-color: #113F67;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -225,7 +225,7 @@ body{
 }
 
 .cart:hover a{
-  color: #ff0000ee;
+  color: #113F67;
   
 }
 
@@ -267,7 +267,7 @@ body{
   .ctrl-btn {
     padding: 20px 20px;
     min-width: 50px;
-    background: #33353d;
+    background: #113F67;
     border: none;
     font-weight: 600;
     text-align: center;
@@ -428,7 +428,7 @@ main {
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#113F67;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -495,7 +495,7 @@ main {
   margin-left:6px;
   margin-right:40px;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#113F67
 }
 .copyright-text
 {
@@ -843,7 +843,7 @@ main {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #33353d;
+  background-color: #113F67;
   color: white;
 }
 
@@ -852,7 +852,7 @@ main {
   height: 40px;
   text-align: center;
   font-size: large;
-  background-color:#33353d;
+  background-color:#113F67;
   font-weight: bold;
   /* margin-left: 70%; */
   float: right;
@@ -923,7 +923,7 @@ main {
  width: 300px;
  height: 30px;
  margin-bottom: 10px;
- background-color: #33353d;
+ background-color: #113F67;
  text-align: center;
  color: white;
  font-size: large;
@@ -1035,7 +1035,7 @@ color: white;}
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color:#33353d;
+     background-color:#113F67;
  }
  
  
@@ -1062,7 +1062,7 @@ color: white;}
  position: relative;
  max-width: 300px;
  height: 215px;
- background-color: #33353d;
+ background-color: #113F67;
  margin: 30px     10px;
  padding: 20px    15px;
  display: flex;
