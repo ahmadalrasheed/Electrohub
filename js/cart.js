@@ -202,7 +202,7 @@ function cardForm(event) {
       icon: 'success',
       confirmButtonText: 'ok'
     }).then(function(){
-      window.location = '../index.html';
+      window.location = 'index.html';
     });
     localStorage.removeItem('cart');
 
