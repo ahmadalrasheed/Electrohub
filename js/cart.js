@@ -1,6 +1,7 @@
 'use strict';
 let totalEl;
-// Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
+let totalDiv = document.getElementById('totalResult');
+let totalElResult = document.createElement('h3');
 function renderCart() {
   // eslint-disable-next-line no-undef
   loadCart();
@@ -8,24 +9,10 @@ function renderCart() {
   // eslint-disable-next-line no-undef
   showCart();
 }
-
-// TODO: Remove all of the rows (tr) in the cart table (tbody)
 function clearCart() {
-  // eslint-disable-next-line no-undef
-
   tbody.textContent = '';
 }
 let cartTotalEl=document.getElementById('carttotal');
-
-// TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
-
-
-// TODO: Find the table body
-
-// TODO: Iterate over the items in the cart
-// TODO: Create a TR
-// TODO: Create a TD for the delete link, quantity,  and the item
-// TODO: Add the TR to the TBODY and each of the TD's to the TR
 let buttonEl;
 let total = 0;
 function showCart() {
@@ -38,26 +25,40 @@ function showCart() {
     let tdEl4 = document.createElement('td');
     let tdEl5 = document.createElement('td');
     let imgEl = document.createElement('img');
+
+    let inputElTotal = document.createElement('input');
+     inputElTotal.type='number';
+
     imgEl.setAttribute('src', cart.items[i].product.image);
     tdEl1.appendChild(imgEl);
     imgEl.style.width = '50px';
     imgEl.style.height = '50px';
-
+    
     tdEl5.textContent = '❌';
     tdEl5.style.cursor = 'pointer';
     // eslint-disable-next-line no-undef
     tdEl2.textContent = cart.items[i].product.name;
     tdEl2.style.textAlign = 'center';
     // eslint-disable-next-line no-undef
-    tdEl3.textContent = cart.items[i].quantity;
-   let inputTd= document.createElement('input');
+    // tdEl3.textContent = cart.items[i].quantity;
+    tdEl3.appendChild(inputElTotal);
+    inputElTotal.defaultValue = cart.items[i].quantity;
+    inputElTotal.addEventListener('change',reCalculateTotal);
+    function reCalculateTotal(event){
+    total = 0;
 
 
+    
+    for (let i = 0, row; row = tbody.rows[i]; i++) {
 
-    // let input = document.createElement('input');
-    // input.setAttribute('type','number');
-    // input.setAttribute('type','number');
+         total = total + cart.items[i].product.price * row.cells[2].childNodes[0].value ;
+       
+        
+    }
 
+  
+       totalElResult.textContent = 'Total : ' + total+'$';
+    }
 
     // eslint-disable-next-line no-undef
     tdEl4.textContent = cart.items[i].product.price;
@@ -69,13 +70,8 @@ function showCart() {
     // eslint-disable-next-line no-undef
     tbody.appendChild(trEl);
   }
-  for (let i = 0; i < cart.items.length; i++) {
-    total = total + cart.items[i].product.price;
-  }
-  totalEl = document.createElement('h3');
-  totalEl.setAttribute('id','totalprice');
-  totalEl.textContent = 'Total : ' + total+'$';
-  formContainer.appendChild(totalEl);
+ 
+
 }
 
 function setCartText(cart) {
@@ -220,20 +216,19 @@ function cardForm(event) {
   buttonEl.removeEventListener('click', cardForm);
   
 }
+function totalCalc(){
+  totalDiv.textContent = '';
 
+  // totalEl.setAttribute('id','totalprice');
+totalElResult.style.width = '100px';
+totalElResult.style.height = '100px';
+  for (let i = 0; i < cart.items.length; i++) {
+    total = total +cart.items[i].product.price;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// This will initialize the page and draw the cart on screen
+  totalElResult.textContent = 'Total : ' + total+'$';
+  totalDiv.appendChild(totalElResult);
+}
 renderCart();
 setCartText(cart);
+totalCalc();
