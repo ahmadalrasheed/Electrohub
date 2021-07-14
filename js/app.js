@@ -6,15 +6,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 let laptopProducts = [];
 let phonesProducts = [];
 let tvProducts = [];
@@ -434,7 +425,7 @@ function getCount(parent, getChildrensChildren) {
 
 // }
 
-let delay = 2500;
+let delay = 1500;
 let sliderRadios = document.getElementsByName('slider');
 let index=0;
 let imageCount = sliderRadios.length;
