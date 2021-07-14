@@ -4,16 +4,6 @@ let table = document.getElementById('table');
 let tbody = document.getElementById('tbody');
 table.addEventListener('click', removeItemFromCart);
 
-// let cartTotalEl=document.getElementById('carttotal')
-
-// function removeItemFromCart(event) {
-
-//   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
-//   // TODO: Save the cart back to local storage
-//   // TODO: Re-draw the cart table
-
-// }
-
 
 function removeItemFromCart(event) {
   console.log(event.target);
@@ -40,5 +30,4 @@ function removeItemFromCart(event) {
     cart.saveToLocalStorage();
   }
 
-//   renderCart();
 }
