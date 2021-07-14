@@ -178,13 +178,13 @@ function renderRow(arr) {
   h2El.style.textAlign = 'center';
   h2El.style.padding = '20px';
   h2El.style.color = 'white';
-  h2El.style.background = '#FF0000EE';
+  h2El.style.background = '#113F67';
   h2El.style.width = '90%';
   h2El.style.fontSize='32px';
   h2El.style.marginBottom='30px';
   h2El.style.borderTopLeftRadius='50px';
   h2El.style.borderBottomRightRadius='50px';
-  h2El.style.backgroundImage='linear-gradient(#33353d, grey)';
+  // h2El.style.backgroundImage='linear-gradient(#33353d, grey)';
   h2El.style.boxShadow='black 0 10px 10px';
   divEl.appendChild(h2El);
 
@@ -195,7 +195,7 @@ function renderRow(arr) {
   let slide = document.createElement('div');
   let slider = document.createElement('div');
   slider.style.margin = '20px 20px';
-  slider.style.background = '#33353D';
+  slider.style.background = '#ffffff';
   slider.setAttribute('id', 'slider' + arr[0].type);
   slide.setAttribute('id', 'slide' + arr[0].type);
 
