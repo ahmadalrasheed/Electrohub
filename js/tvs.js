@@ -98,4 +98,4 @@ function renderlaptops(arr){
   assignIds(tvProducts);
   
 
-//   setCartText(cart);
+  setCartText(cart);
