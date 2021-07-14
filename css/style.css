@@ -756,6 +756,7 @@ main {
    text-align: center;
    font-size: 40px;
    font-weight: bolder;
+   color: black;
  }
 
  #laptopsdisplay{
@@ -1152,6 +1153,7 @@ color: white;}
   top: 100px;
   font-weight: bolder;
   font-size: 40px;
+  color: black;
 }
 .aboutus-flex{
   background-color: white;
