@@ -756,6 +756,7 @@ main {
    text-align: center;
    font-size: 40px;
    font-weight: bolder;
+   color: black;
  }
 
  #laptopsdisplay{
@@ -871,11 +872,14 @@ main {
 #newForm {
   position: relative;
   top: -29px;
-  clear: both;
- float: right;
+  /* clear: both; */
+ /* float: right; */
+ display: inline-block;
  bottom: 30px;
  margin-left: 54%;
  height: 60%;
+ right:250px ;
+ top: 10px;
 }
 #firstin {
  display: flex;
@@ -932,6 +936,7 @@ main {
   font-size: 30px;
   position: relative;
   left: 40px;
+  color: #113F67;
 }
 #legend {
   padding-bottom: 5px;
@@ -1152,6 +1157,7 @@ color: white;}
   top: 100px;
   font-weight: bolder;
   font-size: 40px;
+  color: black;
 }
 .aboutus-flex{
   background-color: white;

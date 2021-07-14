@@ -73,7 +73,7 @@ function showCart() {
   }
   totalEl = document.createElement('h3');
   totalEl.setAttribute('id','totalprice');
-  totalEl.textContent = 'Your total price is ' + total+'$';
+  totalEl.textContent = 'Total : ' + total+'$';
   formContainer.appendChild(totalEl);
 }
 
@@ -144,6 +144,9 @@ function cardForm(event) {
   let divEl4= document.createElement('div');
   divEl4.setAttribute('id','fourthin');
   fieldEl.appendChild(divEl4);
+  fieldEl.style.border='4px solid #113F67';
+  fieldEl.style.padding='20px';
+  fieldEl.style.borderRadius='30px';
   let labelEl4 = document.createElement('label');
   labelEl4.textContent = 'CVV';
   let inputEl4 = document.createElement('input');
