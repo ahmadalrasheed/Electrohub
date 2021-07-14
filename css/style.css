@@ -464,7 +464,8 @@ main {
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
+  
 }
 .footer-links li
 {
@@ -472,7 +473,8 @@ main {
 }
 .footer-links a
 {
-  color:#737373
+  
+  color: white;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -501,6 +503,7 @@ main {
 {
   margin:0;
   margin-top: 3px;
+  color: white;
 }
 @media (max-width:991px)
 {
@@ -713,8 +716,9 @@ main {
 #laptopsdiv{
   text-align: center;
   border-radius: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../images/laptops.jpg);
+
  width: 50%;
- background-image: url(../images/laptops.jpg);
  
 
 }
@@ -722,7 +726,7 @@ main {
   text-align: center;
   border-radius: 30px;
   width: 50%;
-  background-image: url(../images/headphones.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/headphones.jpg);
   margin-left: 40px;
  }
 
@@ -730,8 +734,9 @@ main {
  #Phonesdiv{
   text-align: center;
   border-radius: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/phones.jpg);
+
   width: 50%;
-  background-image: url(../images/phones.jpg);
   
  }
 
@@ -739,10 +744,37 @@ main {
   text-align: center;
   border-radius: 30px;
   width: 50%;
-  background-image: url(../images/tvs.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/tvs.jpg);
   margin-left: 40px;
  }
 
+ /* .darken{
+  border: solid 10px gray;
+  display: inline-block;
+  text-align: center;
+  margin: 1%;
+  min-width: 150px;
+  outline: 3px solid black;
+  width: 10%;
+  background: url(http://lorempixel.com/200/200/nature/5) center no-repeat;
+  background-size: 100 100%;
+}
+
+
+
+.darken:after {
+  content: '';
+  display: inline-block;
+  padding-top: 100%;
+  vertical-align: middle;
+}
+
+
+
+.darken {
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 1);
+} */
  .allproducts{
   
   display: inline-block;
@@ -760,6 +792,7 @@ main {
  }
 
  #laptopsdisplay{
+
    display: flex;
    position: relative;
    top:50px;
@@ -854,12 +887,15 @@ main {
   font-size: large;
   background-color:#113F67;
   font-weight: bold;
+  position: relative;
+  left: 68%;
+  /* bottom: 29px; */
   /* margin-left: 70%; */
-  float: right;
- margin-bottom: 5%;
+  /* float: right;
+ margin-bottom: 5%; */
  color: white;
- margin-right:3%;
- bottom:0px ;
+ /* margin-right:3%; */
+ /* bottom:0px ; */
  
 }
 #formcontainer{
@@ -870,6 +906,7 @@ main {
  margin-bottom: 30px;
 }
 #newForm {
+  text-align: center;
   position: relative;
   top: -29px;
   /* clear: both; */
@@ -878,8 +915,10 @@ main {
  bottom: 30px;
  margin-left: 54%;
  height: 60%;
- right:250px ;
+ right:420px ;
  top: 10px;
+padding-bottom: 70px;
+width: 50%;
 }
 #firstin {
  display: flex;
@@ -923,8 +962,9 @@ main {
  margin-bottom: 10px;
 }
 #submit {
- width: 300px;
- height: 30px;
+ width: 50%;
+ padding: 10px;
+ /* height: 30px; */
  margin-bottom: 10px;
  background-color: #113F67;
  text-align: center;
@@ -940,10 +980,11 @@ main {
 }
 #legend {
   padding-bottom: 5px;
+  width: 25%;
 }
 #hrjava {
   margin-bottom: 10px;
-  width: 60%;
+  
 }
 
 
@@ -1004,9 +1045,13 @@ color: white;}
 
 #footerlogoo{
   height:100px;
-  width:150px;
-  margin-top: 45px;
+  width: 160px;
+  left:10px;
+  /* margin-top: 45px; */
   float: left;
+  margin-left: 20px;
+  
+  
   
 }
 
@@ -1031,6 +1076,7 @@ color: white;}
 
 .text-justify{
   line-height: 2em;
+  color: white;
 }
 
  
@@ -1040,16 +1086,30 @@ color: white;}
      justify-content: center;
      align-items: center;
      background-color:#113F67;
+     padding-bottom: 100px;
+     padding-top: 40px;
  }
  
  
  #he{
- color:black;
+     background:url('https://media4.giphy.com/media/xT9IgwWOpd4sJVuDe0/giphy.gif?cid=ecf05e4714epesj37nc0r4tlpi6ju7a1gznpl4lvaoqtvmuq&rid=giphy.gif&ct=g') center center no-repeat;
+     -webkit-background-clip: text;
+     font-family: 'Libre Baskerville', serif;
+     -webkit-text-fill-color: transparent;
+     font-size:5rem;
+     letter-spacing:10px;
+     background-size:cover;
+     margin:0px;
+     color:transparent;
      text-align: center;
      font-size: 80px;
-     font-family: 'Otomanopee One', sans-serif;
-     font-weight: bolder;
- 
+     
+ }
+
+ #hediv{
+   margin-top: 20px;
+   background-color: #113F67 ;
+   border-radius: 30px;
  }
  .aboutus-contanier{
  
@@ -1060,6 +1120,7 @@ color: white;}
      align-items: center;
      flex-wrap: wrap;
      padding: 40px;
+     
  }
  
  .aboutus-contanier .card{
@@ -1149,6 +1210,7 @@ color: white;}
 .allproductsmain{
   margin-top: 100px;
   padding-bottom: 40px;
+  
 }
 
 .specificproducttitle{
@@ -1175,3 +1237,19 @@ h2{
     padding-bottom: 20px;
   } */
 /*  end of styling products*/
+
+
+/* finaldayin the project */
+.fitdescriptionjimage{
+  width: 100%;
+  
+  
+}
+#descriptionimage{
+  margin-top: 120px;
+}
+
+
+/* END of final day */
+
+

@@ -97,5 +97,5 @@ function renderlaptops(arr){
   renderlaptops(laptopProducts);
   assignIds(laptopProducts);
   
-
+  setCartText(cart);
 //   setCartText(cart);

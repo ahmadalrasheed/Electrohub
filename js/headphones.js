@@ -98,4 +98,4 @@ function renderlaptops(arr){
   assignIds(headphonesProducts);
   
 
-//   setCartText(cart);
+  setCartText(cart);
