@@ -1,3 +1,154 @@
+/* making responisive web app */
+@media only screen and (max-width:1367px){
+  #descriptionimage{
+    display: none;
+  }
+  .footerquicklinks{
+    display: none;
+  }
+  #slidesContainer{
+    padding: 10% 0 10% 0;
+  }
+  .main-slider{
+    padding: 5% 0 20% 0;
+    }
+
+}
+
+@media only screen and (max-width:1087px){
+  .container .row {
+    flex-direction: column;
+  } 
+  .container .footer-about-information {
+    
+    display: inline-block;
+  } 
+  .footercategories div ul li  {
+    display: inline-block;
+    padding: 1%;
+  }
+  .footercategories div h6  {
+ margin-left: 11%;
+
+  }
+  .footercategories div ul  {
+    margin-left: 11%;
+   
+     }
+
+
+  /* .footercategories{
+    margin: 0 auto;
+  }
+  .footercategories div{
+    padding: 10%;
+ 
+  } */
+
+  
+}
+
+@media only screen and (max-width:1047px){
+  #responsive-logo{
+    display: inline-block;
+    background-color: rbg(40,50,60);
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+  }
+  header div nav ul ,header div nav:active ul{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    padding: 10px;
+    background-color: #E2D6D3;
+    right: 25px;
+    top: 30px;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px 8px 8px 8px;
+    width: 100%;
+    opacity: 0.92;
+    
+  }
+  header div nav ul li a {
+    color:#113F67
+  }
+  header div nav:hover ul{
+    display: block;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  nav li a {
+    text-align: center;
+    display: inline-block;
+  }
+
+ 
+  .menu-icon{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .main-slider{
+    padding-bottom: 30%;
+    }
+
+  header h1{
+    font-size: 2rem;
+  }
+ footer p  ,footer a{
+  font-size:1.5vw;
+ } 
+
+  .about-us-info{
+    width: 100%;
+  }
+  header h1 {
+   margin-top: 30px;
+   left: 1%
+  }
+  
+
+}
+@media only screen and (max-width:969px){
+  .main-slider{
+    padding-bottom: 40%;
+    }
+}
+@media only screen and (max-width:815px){
+  .main-slider{
+    padding-bottom: 60%;
+    }
+}
+@media only screen and (max-width:658px){
+  .main-slider{
+    padding-bottom: 70%;
+    }
+}
+@media only screen and (max-width:595px){
+  .main-slider{
+    padding-bottom: 85%;
+    }
+}
+@media only screen and (max-width:510px){
+  .main-slider{
+    padding-bottom: 120%;
+    }
+}
+
+
+
+/* finish  making responisive web app */
+
+nav ul li {
+  display: inline-block;
+}
 #logo{
   height:150px;
   width:150px;
@@ -6,10 +157,10 @@
   right: 49%;
 }
 header{
- position: relative;
-
+ position: flex;
 
 }
+
 #fixeddiv{
   background:#113F67;
   width:100%;
@@ -22,6 +173,7 @@ header{
   z-index: 99;
   width: 100%;
   height: 12vh;
+  display: flex;
 }
 
     h1{
@@ -33,12 +185,10 @@ header{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size:5rem;
-        letter-spacing:10px;
+        letter-spacing:0.25rem;
         background-size:cover;
-        margin:0px;
         color:transparent;
-        right:390px;
-
+        right:20%;
         
         /* left: 70px; */
         
@@ -50,7 +200,7 @@ header{
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        left:160px;
+        left: 30%;
         bottom: 90px;
     }
 
@@ -62,7 +212,7 @@ header{
             position: relative;
             color: #DDDDDD;
             font-size: 18px;
-            left: 365px;
+            
             
         }
 
@@ -136,6 +286,7 @@ tfoot {
 html,body {
     position: relative;
     height: 100%;
+    
 
 }
 body{
@@ -429,9 +580,9 @@ main {
 .site-footer
 {
   background-color:#113F67;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
+  padding:4vh 0 2vh;
+  font-size:2vh;
+  line-height:2.5vh;
   color:#737373;
 
 }
@@ -447,10 +598,10 @@ main {
 .site-footer h6
 {
   color:#fff;
-  font-size:16px;
+  font-size:3vh;
   text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+  margin-top:1vh;
+  letter-spacing:0.5vh
 }
 .site-footer a
 {
@@ -491,18 +642,18 @@ main {
 }
 .site-footer .social-icons a
 {
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:40px;
+  width:4vh;
+  height:4vh;
+  line-height:4vh;
+  margin-left:0.5vh;
+  margin-right:4vh;
   border-radius:100%;
   background-color:#113F67
 }
 .copyright-text
 {
   margin:0;
-  margin-top: 3px;
+  margin-top: 1vh;
   color: white;
 }
 @media (max-width:991px)
@@ -519,10 +670,7 @@ main {
   {
     padding-bottom:0
   }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
+
 }
 .social-icons
 {
@@ -600,7 +748,7 @@ main {
 }
 .row{
   display: inline-flex;
-  width: 1000px;
+  width: 80%;
   margin-left: auto;
   margin-right: 35px;
 }
@@ -796,7 +944,7 @@ main {
    display: flex;
    position: relative;
    top:50px;
-   left:120px;
+   left:10%;
    flex-wrap: wrap;
    padding-bottom: 90px;
    margin-top: 100px;
@@ -806,7 +954,7 @@ main {
   display: flex;
   position: relative;
   top:50px;
-  left:120px;
+  left:10%;
   flex-wrap: wrap;
   padding-bottom: 90px;
   margin-top: 100px;
@@ -816,7 +964,7 @@ main {
   display: flex;
   position: relative;
   top:50px;
-  left:120px;
+  left:10%;
   flex-wrap: wrap;
   padding-bottom: 90px;
   margin-top: 100px;
@@ -827,7 +975,7 @@ main {
   display: flex;
   position: relative;
   top:50px;
-  left:120px;
+  left:10%;
   flex-wrap: wrap;
   padding-bottom: 90px;
   margin-top: 100px;
@@ -880,6 +1028,7 @@ main {
   color: white;
 }
 
+
 #total{
   width: 250px;
   height: 40px;
@@ -888,7 +1037,6 @@ main {
   background-color:#113F67;
   font-weight: bold;
   position: relative;
-  left: 68%;
   /* bottom: 29px; */
   /* margin-left: 70%; */
   /* float: right;
@@ -915,7 +1063,7 @@ main {
  bottom: 30px;
  margin-left: 54%;
  height: 60%;
- right:420px ;
+ right:30% ;
  top: 10px;
 padding-bottom: 70px;
 width: 50%;
@@ -1096,7 +1244,7 @@ color: white;}
      -webkit-background-clip: text;
      font-family: 'Libre Baskerville', serif;
      -webkit-text-fill-color: transparent;
-     font-size:5rem;
+     font-size:5vw;
      letter-spacing:10px;
      background-size:cover;
      margin:0px;
@@ -1114,7 +1262,7 @@ color: white;}
  .aboutus-contanier{
  
      position: relative;
-     width: 1100px;
+     width: 80%;
      display: flex;
      justify-content: center;
      align-items: center;
