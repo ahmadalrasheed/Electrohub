@@ -171,7 +171,7 @@ function renderRow(arr) {
   h2El.style.color = 'white';
   h2El.style.background = '#113F67';
   h2El.style.width = '90%';
-  h2El.style.fontSize='32px';
+  h2El.style.fontSize='3vw';
   h2El.style.marginBottom='30px';
   h2El.style.borderTopLeftRadius='50px';
   h2El.style.borderBottomRightRadius='50px';
