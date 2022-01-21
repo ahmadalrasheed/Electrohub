@@ -32,6 +32,9 @@
     margin-left: 11%;
    
      }
+     .ctrl-btn {
+      display: none;
+    }
 
   
 }
@@ -52,6 +55,7 @@
   header nav ul li a{
     font-size: 2.5vw;
   }
+  
   header div nav ul ,header div nav:active ul{
     display: none;
     position: absolute;
@@ -128,9 +132,7 @@
   }
 
 }
-/* @media only screen and (max-width:500px){
-  
-} */
+
 @media only screen and (max-width:380px){
   #responsive-logo{
     margin-top: 15px;
@@ -325,7 +327,7 @@ body{
 
 }
 .image1-box {
-    height: 170px;
+    height: 30%;
 }
 .image1-box img{
     height: auto;
@@ -394,7 +396,7 @@ body{
     width: 90%;
     height: 400px;
     position: relative;
-    left:3%;
+    left:5%;
     overflow-x: scroll;
     overflow-y: hidden;
   }
@@ -424,7 +426,7 @@ body{
   }
   
   .ctrl-btn {
-    padding: 20px 20px;
+    padding: 2% 2%;
     min-width: 50px;
     background: #113F67;
     border: none;
@@ -433,7 +435,6 @@ body{
     cursor: pointer;
     outline: none;
     color: white;
-  
     position: absolute;
     top: 50%;
     margin-top: -27.5px;
@@ -868,7 +869,7 @@ main {
   text-align: center;
   border-radius: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../images/laptops.jpg);
-  background-size: 200px 200px;
+  background-size: 120px 120px;
  width: 50%;
  height:20vw;
  
@@ -880,7 +881,7 @@ main {
   width: 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/headphones.jpg);
   margin-left: 40px;
-  background-size: 200px 200px;
+  background-size: 120px 120px;
   height:20vw;
  }
 
@@ -890,7 +891,7 @@ main {
   border-radius: 30px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/phones.jpg);
   width: 50%;
-  background-size: 200px 200px;
+  background-size: 120px 120px;
   height:20vw;
   
  }
@@ -901,7 +902,7 @@ main {
   width: 50%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/tvs.jpg);
   margin-left: 40px;
-  background-size: 200px 200px;
+  background-size: 120px 120px;
   height:20vw;
  }
 
@@ -953,9 +954,10 @@ main {
    display: flex;
    position: relative;
    top:50px;
-   left:10%;
+   left:6%;
    flex-wrap: wrap;
    padding-bottom: 90px;
+   padding-left:40px;
    margin-top: 100px;
    
  }
@@ -963,9 +965,11 @@ main {
   display: flex;
   position: relative;
   top:50px;
-  left:10%;
+  left:6%;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  padding-left:40px;
+
   margin-top: 100px;
    
  }
@@ -973,9 +977,11 @@ main {
   display: flex;
   position: relative;
   top:50px;
-  left:10%;
+  left:6%;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  padding-left:40px;
+
   margin-top: 100px;
 
    
@@ -984,9 +990,11 @@ main {
   display: flex;
   position: relative;
   top:50px;
-  left:10%;
+  left:6%;
   flex-wrap: wrap;
   padding-bottom: 90px;
+  padding-left:40px;
+
   margin-top: 100px;
     
  }
@@ -1374,7 +1382,7 @@ color: white;}
 .specificproducttitle{
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 130px;
   font-weight: bolder;
   font-size: 4vw;
   color: black;

@@ -185,7 +185,6 @@ function renderRow(arr) {
   slidesContainer.appendChild(divEl);
   let slide = document.createElement('div');
   let slider = document.createElement('div');
-  slider.style.margin = '20px 20px';
   slider.style.background = '#ffffff';
   slider.setAttribute('id', 'slider' + arr[0].type);
   slide.setAttribute('id', 'slide' + arr[0].type);
