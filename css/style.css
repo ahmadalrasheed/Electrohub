@@ -48,8 +48,8 @@
     width: 40px;
     height: 40px;
     text-decoration: none;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 20%;
+    margin-left:32%;
     
   }
   header nav ul li a{
@@ -134,10 +134,7 @@
 }
 
 @media only screen and (max-width:380px){
-  #responsive-logo{
-    margin-top: 15px;
-    
-  }
+
   header h1{
     font-size: 1.5rem;
   }
